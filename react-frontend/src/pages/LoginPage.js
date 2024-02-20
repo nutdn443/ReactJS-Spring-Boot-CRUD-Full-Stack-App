@@ -38,7 +38,7 @@ const LoginPage=({loading,error,...props})=>{
             switch(err.response.status){
                 case 401:
                     console.log("401 status");
-                    props.loginFailure("Authentication Failed.Bad Credentials");
+                    props.loginFailure("username or password is wrong.");
                     break;
                 default:
                     props.loginFailure('Something Wrong!Please Try Again'); 
