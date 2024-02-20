@@ -2,7 +2,7 @@ import react,{useState} from 'react';
 import { connect } from 'react-redux';
 import { authenticate, authFailure, authSuccess } from '../redux/authActions';
 import './loginpage.css';
-import {userLogin} from '../components/authenticationService';
+import {userLogin} from '../api/authenticationService';
 import {Alert,Spinner} from 'react-bootstrap';
 
 const LoginPage=({loading,error,...props})=>{

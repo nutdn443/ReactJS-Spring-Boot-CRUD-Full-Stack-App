@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import {fetchUserData} from '../../components/authenticationService';
+import {fetchUserData} from '../../api/authenticationService';
 
 
 const MainWrapper=styled.div`
