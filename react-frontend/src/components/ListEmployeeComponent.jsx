@@ -35,6 +35,7 @@ class ListEmployeeComponent extends Component {
         this.props.history.push('/add-employee/_add');
     }
 
+
     render() {
         return (
             <div>

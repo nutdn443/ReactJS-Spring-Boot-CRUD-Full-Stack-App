@@ -21,8 +21,10 @@ const LoginPage=({loading,error,...props})=>{
 
             console.log("response",response);
             if(response.status===200){
+                const token = response.data.token; // Assuming the token is in response.data.token
+                localStorage.setItem('token', token); // Store token in local storage
                 props.setUser(response.data);
-                props.history.push('/dashboard');
+                props.history.push('/employees');
             }
             else{
                props.loginFailure('Something Wrong!Please Try Again'); 
